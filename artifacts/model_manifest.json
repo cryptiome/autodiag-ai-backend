@@ -1,0 +1,11 @@
+{
+  "artifact_package_version": "1.0.0",
+  "model_version": "1.0.0",
+  "status": "FROZEN",
+  "files_sha256": {
+    "artifacts/autodiag_model.keras": "4164175ea58edd079d96ce325a6255285c887f4008722a8cdac8bdfd819ce2bf",
+    "artifacts/feature_order.json": "f95f5e6628dc574ace179b6e56c1132d0915463ec72844836cc0ce4a5ef5a9bf",
+    "artifacts/fault_label_map.json": "718b6bc6df60ecb74d7512c42145ebd3ecaac7bf48848a32aeff377e1bf0f477",
+    "artifacts/model_metadata.json": "6978760c92e2d42e89bcb0e306f84fe490d253c694686e0695815b66c5fcf8cd"
+  }
+}

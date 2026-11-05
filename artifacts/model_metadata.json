@@ -1,0 +1,55 @@
+{
+  "model_version": "1.0.0",
+  "status": "FROZEN_FOR_INFERENCE",
+  "selected_candidate_id": "M1_baseline_128_64",
+  "dataset_version": "3.6.0",
+  "raw_symptoms": 118,
+  "input_dimension": 354,
+  "output_classes": 35,
+  "encoding": {
+    "method": "3-state one-hot",
+    "state_order": [
+      1,
+      0,
+      -1
+    ],
+    "yes": [
+      1,
+      0,
+      0
+    ],
+    "no": [
+      0,
+      1,
+      0
+    ],
+    "unknown": [
+      0,
+      0,
+      1
+    ]
+  },
+  "architecture": {
+    "candidate_id": "M1_baseline_128_64",
+    "input_shape": [
+      null,
+      354
+    ],
+    "output_shape": [
+      null,
+      35
+    ],
+    "parameters": 55971
+  },
+  "framework": {
+    "tensorflow_version": "2.21.0"
+  },
+  "data_rows": {
+    "master": 10500,
+    "train": 7350,
+    "validation": 1575,
+    "test": 1575,
+    "strict_test": 977
+  },
+  "model_sha256": "4164175ea58edd079d96ce325a6255285c887f4008722a8cdac8bdfd819ce2bf"
+}
