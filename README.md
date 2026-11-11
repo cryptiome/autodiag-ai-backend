@@ -5,11 +5,10 @@ colorFrom: blue
 colorTo: gray
 sdk: gradio
 sdk_version: 6.19.0
-python_version: 3.11.9
+python_version: "3.12.12"
 app_file: app.py
 pinned: false
 ---
-
 
 # AutoDiag AI Backend
 # AutoDiag AI Backend
