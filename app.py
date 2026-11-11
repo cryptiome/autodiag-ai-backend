@@ -1,5 +1,11 @@
+import os
+
+os.environ.setdefault('CUDA_VISIBLE_DEVICES', '-1')
+os.environ.setdefault('GRADIO_SSR_MODE', 'false')
+
 from pathlib import Path
 
+import spaces
 from fastapi import Request
 from fastapi.responses import JSONResponse
 from firebase_admin import auth as firebase_auth
@@ -43,6 +49,19 @@ diagnosis_service = DiagnosisService(
 )
 
 app = Server()
+
+
+@spaces.GPU(duration=1)
+def _zerogpu_probe() -> str:
+    return 'ok'
+
+
+@app.api(
+    name='zerogpu_probe',
+    api_visibility='private',
+)
+def zerogpu_probe() -> str:
+    return _zerogpu_probe()
 
 
 def api_error_response(error):
@@ -304,5 +323,8 @@ async def diagnose(request: Request):
     return result
 
 
+demo = app
+
+
 if __name__ == '__main__':
-    app.launch()
+    demo.launch(ssr_mode=False)
