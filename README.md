@@ -1,3 +1,17 @@
+---
+title: AutoDiag AI Backend
+emoji: 🚗
+colorFrom: blue
+colorTo: gray
+sdk: gradio
+sdk_version: 6.19.0
+python_version: 3.11.9
+app_file: app.py
+pinned: false
+---
+
+
+# AutoDiag AI Backend
 # AutoDiag AI Backend
 
 Production-ready Flask backend for the AutoDiag AI mobile application.
